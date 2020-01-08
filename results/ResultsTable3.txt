@@ -1,0 +1,102 @@
+>> ExerciseThree
+Success Rate and Performance - Nelder-Mead - 10 Dimensions
+          SuccessRate    Performance
+          ___________    ___________
+
+    F1      0.86275          5049.7 
+    F2            0               0 
+    F3            0               0 
+    F4     0.039216      6.9396e+05 
+    F5            0               0 
+
+Success Rate and Performance - Hooke-Jeeves - 10 Dimensions
+          SuccessRate    Performance
+          ___________    ___________
+
+    F1           1           1294.1 
+    F2      0.2549       3.4106e+05 
+    F3           0                0 
+    F4           0                0 
+    F5           1           1846.9 
+
+Success Rate and Performance - Implicit Filtering - 10 Dimensions
+          SuccessRate    Performance
+          ___________    ___________
+
+    F1         1           476.84   
+    F2         0                0   
+    F3         0                0   
+    F4         0                0   
+    F5         1            15300   
+
+Success Rate and Performance - Multidirectional Search - 10 Dimensions
+          SuccessRate    Performance
+          ___________    ___________
+
+    F1            1        3412.2   
+    F2            0             0   
+    F3            0             0   
+    F4            0             0   
+    F5      0.98039        3992.1   
+
+Success Rate and Performance - Pattern Search - 10 Dimensions
+          SuccessRate    Performance
+          ___________    ___________
+
+    F1         1           3358.8   
+    F2         0                0   
+    F3         0                0   
+    F4         0                0   
+    F5         1           4381.1   
+
+Success Rate and Performance - Nelder-Mead - 30 Dimensions
+          SuccessRate    Performance
+          ___________    ___________
+
+    F1         0              0     
+    F2         0              0     
+    F3         0              0     
+    F4         0              0     
+    F5         0              0     
+
+Success Rate and Performance - Hooke-Jeeves - 30 Dimensions
+          SuccessRate    Performance
+          ___________    ___________
+
+    F1         1           4221.1   
+    F2         0                0   
+    F3         0                0   
+    F4         0                0   
+    F5         1             6289   
+
+Success Rate and Performance - Implicit Filtering - 30 Dimensions
+          SuccessRate    Performance
+          ___________    ___________
+
+    F1         1           1569.2   
+    F2         0                0   
+    F3         0                0   
+    F4         0                0   
+    F5         1            43890   
+
+Success Rate and Performance - Multidirectional Search - 30 Dimensions
+          SuccessRate    Performance
+          ___________    ___________
+
+    F1         1            34943   
+    F2         0                0   
+    F3         0                0   
+    F4         0                0   
+    F5         1            35284   
+
+Success Rate and Performance - Pattern Search - 30 Dimensions
+          SuccessRate    Performance
+          ___________    ___________
+
+    F1         1            28594   
+    F2         0                0   
+    F3         0                0   
+    F4         0                0   
+    F5         1            35113   
+
+>> 

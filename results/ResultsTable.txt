@@ -1,0 +1,100 @@
+Residual Error - Nelder-Mead - 10 Dimensions
+             Best          Mean         Worst       StandardDeviation
+          __________    __________    __________    _________________
+
+    F1             0        1877.8         48660             8205    
+    F2        3194.5    6.6994e+07    2.1499e+09        3.089e+08    
+    F3    5.9666e+05    1.2599e+17    4.8725e+18        7.119e+17    
+    F4             0    8.0818e+06     4.099e+08       5.7392e+07    
+    F5        11.279        3311.4         36696           7960.3    
+
+Residual Error - Hooke-Jeeves - 10 Dimensions
+             Best          Mean         Worst       StandardDeviation
+          __________    __________    __________    _________________
+
+    F1             0             0             0                0    
+    F2             0    0.00014227     0.0037153       0.00065071    
+    F3    1.5799e-07    8.2702e+08    1.1502e+10       2.2436e+09    
+    F4        27.841        3120.4         21889           4189.2    
+    F5             0             0             0                0    
+
+Residual Error - Implicit Filtering - 10 Dimensions
+           Best        Mean         Worst       StandardDeviation
+          ______    __________    __________    _________________
+
+    F1         0             0             0                0    
+    F2    6406.1    3.8202e+05    3.2939e+06       4.8741e+05    
+    F3    6417.2    9.8541e+26    4.9925e+28       6.9901e+27    
+    F4     20326         46674         83553            16289    
+    F5         0             0             0                0    
+
+Residual Error - Multidirectional Search - 10 Dimensions
+           Best        Mean         Worst       StandardDeviation
+          ______    __________    __________    _________________
+
+    F1         0             0             0                0    
+    F2     31977    2.5952e+05    8.7674e+05       2.0288e+05    
+    F3    0.2348    1.0251e+09    6.1944e+09       1.6579e+09    
+    F4    6697.5         36584         85068            17316    
+    F5         0    8.3138e-10    4.2401e-08       5.9373e-09    
+
+Residual Error - Pattern Search - 10 Dimensions
+           Best        Mean         Worst       StandardDeviation
+          ______    __________    __________    _________________
+
+    F1         0             0             0                0    
+    F2    8077.6    1.7803e+05    4.5302e+05            94045    
+    F3    1179.2    7.5031e+08    8.8816e+09       1.4122e+09    
+    F4     11027         42108         81408            15434    
+    F5         0             0             0                0    
+
+Residual Error - Nelder-Mead - 30 Dimensions
+             Best          Mean         Worst       StandardDeviation
+          __________    __________    __________    _________________
+
+    F1        258.79         53844    1.7669e+05            39823    
+    F2    2.7897e+07    3.3757e+09    2.3345e+10       4.2015e+09    
+    F3    1.2135e+11    2.5235e+25    8.8483e+26       1.2758e+26    
+    F4         56096    9.2659e+07    4.7172e+09       6.6052e+08    
+    F5        1350.8         32521    1.3398e+05            30649    
+
+Residual Error - Hooke-Jeeves - 30 Dimensions
+             Best          Mean         Worst       StandardDeviation
+          __________    __________    __________    _________________
+
+    F1             0             0             0                0    
+    F2    9.4366e-08    0.00010228     0.0010903       0.00024651    
+    F3    5.0864e+06    1.9757e+09    1.0566e+10       2.7244e+09    
+    F4        1301.9        7317.3         18963             4623    
+    F5             0             0             0                0    
+
+Residual Error - Implicit Filtering - 30 Dimensions
+             Best          Mean         Worst       StandardDeviation
+          __________    __________    __________    _________________
+
+    F1             0             0             0                0    
+    F2    1.5189e+05    5.4499e+05    1.1865e+06       2.4545e+05    
+    F3    3.0489e+20    2.3172e+32    1.1616e+34       1.6261e+33    
+    F4    1.0142e+05    1.6256e+05    2.2918e+05            31403    
+    F5             0             0             0                0    
+
+Residual Error - Multidirectional Search - 30 Dimensions
+             Best          Mean         Worst       StandardDeviation
+          __________    __________    __________    _________________
+
+    F1             0             0             0                0    
+    F2    4.3795e+05    1.6491e+06    5.5446e+06       1.0554e+06    
+    F3    5.2694e+07    5.7857e+09    6.2072e+10       9.5238e+09    
+    F4         49590    1.1788e+05    2.5193e+05            39185    
+    F5             0             0             0                0    
+
+Residual Error - Pattern Search - 30 Dimensions
+             Best          Mean         Worst       StandardDeviation
+          __________    __________    __________    _________________
+
+    F1             0             0             0                0    
+    F2     2.328e+05    1.1841e+06    2.5969e+06        5.432e+05    
+    F3    2.5595e+06    1.4321e+09    1.1003e+10       2.1248e+09    
+    F4         64393    1.3028e+05     2.199e+05            33499    
+    F5             0             0             0                0    
+
