@@ -1,0 +1,13 @@
+       T0       Dimensions             Method                T1         T2      Complexity
+    ________    __________    _________________________    _______    ______    __________
+
+    0.024134        10        'Nelder-Mead'                0.40029    7.6549       300.6  
+    0.024134        10        'Hooke-Jeeves'               0.40029    1.3921      41.096  
+    0.024134        10        'Implicit Filtering'         0.40029    1.3721      40.269  
+    0.024134        10        'Multidirectional Search'    0.40029    2.1755      73.558  
+    0.024134        10        'Pattern Search'             0.40029     8.052      317.06  
+    0.024134        30        'Nelder-Mead'                0.50633    8.8852      347.19  
+    0.024134        30        'Hooke-Jeeves'               0.50633    1.4191      37.823  
+    0.024134        30        'Implicit Filtering'         0.50633    1.4069      37.317  
+    0.024134        30        'Multidirectional Search'    0.50633    2.2106      70.616  
+    0.024134        30        'Pattern Search'             0.50633    6.6853      256.03  
