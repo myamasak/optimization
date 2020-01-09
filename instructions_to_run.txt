@@ -4,7 +4,7 @@
 showResults_exported   ---> Regular .m file built in GUI application
 
 % or
-showResults  	---> MATLAB Application Designer
+showResults  	---> MATLAB Application Designer R2019b
 
 
 % This application has been built on MATLAB Application Designer and properly exported to .m file.
