@@ -6,8 +6,6 @@ LoadResults;
 dimensions = [10, 30];
 
 %Algorithm-related declarations
-% algorithmNames = {'Nelder-Mead', 'Hooke-Jeeves', 'Implicit Filtering',...
-%     'Multidirectional Search', 'Pattern Search', 'Genetic Algorithm'};
 algorithmNames = {'Nelder-Mead', 'Hooke-Jeeves', 'Implicit Filtering',...
     'Multidirectional Search', 'Pattern Search'};
 

@@ -27,12 +27,10 @@ t0 = toc(startT0);
 %Constant declarations
 dimensions = [10, 30];
 
-% algorithms = {@nelderMead, @hookeJeeves, @implicitFiltering,...
-%         @multidirectionalSearch, @patternSearch, @geneticAlgorithm};
+
 algorithms = {@nelderMead, @hookeJeeves, @implicitFiltering,...
         @multidirectionalSearch, @patternSearch};
-% algorithmNames = {'Nelder-Mead', 'Hooke-Jeeves', 'Implicit Filtering',...
-%     'Multidirectional Search', 'Pattern Search', 'Genetic Algorithm'};
+
 algorithmNames = {'Nelder-Mead', 'Hooke-Jeeves', 'Implicit Filtering',...
     'Multidirectional Search', 'Pattern Search'};
 
@@ -98,6 +96,11 @@ for i = 1:numel(dimensions)
     end
 end
 
+%% Show results
 tab.Properties.VariableNames = { 'T0', 'Dimensions', 'Method', 'T1',...
     'T2', 'Complexity' };
 disp(tab);
+
+%% Save results
+tab4 = tab;
+save('exerc4sav.mat', 'tab4');

@@ -20,10 +20,7 @@ functionNames = {'Sphere Function',...
     'Different Powers Function'};
 
 % Optimization algorithms
-% optimizationNames = {'Nelder-Mead','Hooke-Jeeves','Implicit Filtering','Multidirectional Search','Pattern Search','Genetic Algorithm'};
 optimizationNames = {'Nelder-Mead','Hooke-Jeeves','Implicit Filtering','Multidirectional Search','Pattern Search'};
-% optimizationNames = {'Nelder-Mead','Hooke-Jeeves','Implicit Filtering','Multidirectional Search'};
-% optimizationNames = {'Nelder-Mead'};
 algorithms = {@nelderMead, @hookeJeeves, @implicitFiltering,...
     @multidirectionalSearch, @patternSearch, @geneticAlgorithm};
 
@@ -40,8 +37,8 @@ Xmin=-100;
 Xmax=100;
 
 % Number of runs
-% runNum=51;
-runNum = 51;
+runNum=51;
+% runNum = 2;
 
 %% Load CEC13 function
 % fhd=str2func('cec13_func');
@@ -97,22 +94,6 @@ for i0=1:numel(D)
                 runs(i0, i1, i2, i3) = algorithm(objFnc, D(i0),...
                     lowerLimits, upperLimits, options);
                 
-%                 if (strcmp(optimizationNames(i1),'Nelder-Mead'))              
-%                     runs(i0, i1, i2, i3) = nelderMead(objFnc, D(i0),...
-%                     lowerLimits, upperLimits, options);
-%                 elseif (strcmp(optimizationNames(i1),'Hooke-Jeeves'))
-%                     runs(i0, i1, i2, i3) = hookeJeeves(objFnc, D(i0),...
-%                     lowerLimits, upperLimits, options);
-%                 elseif (strcmp(optimizationNames(i1),'Implicit Filtering'))
-%                     runs(i0, i1, i2, i3) = implicitFiltering(objFnc, D(i0),...
-%                     lowerLimits, upperLimits, options);
-%                 elseif (strcmp(optimizationNames(i1),'Multidirectional Search'))
-%                     runs(i0, i1, i2, i3) = multidirectionalSearch(objFnc, D(i0),...
-%                     lowerLimits, upperLimits, options);
-%                 elseif (strcmp(optimizationNames(i1),'Pattern Search'))
-%                     runs(i0, i1, i2, i3) = patternSearch(objFnc, D(i0),...
-%                     lowerLimits, upperLimits, options);
-%                 end
                 fprintf(' Partial result: y=%e \n',min([runs(i0, i1, i2, i3).solutions.y]));
                 if i3==1
                     fprintf(' Done!\n');

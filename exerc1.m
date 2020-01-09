@@ -1,13 +1,22 @@
+clc
+clear all
+close all
+
 %% General initialization
 %Load generated results
 LoadResults;
 
 %Dimension-related declarations
 dimensions = [10, 30];
+% dimensions = [5];
+
 
 %Algorithm-related declarations
+% algorithmNames = {'Nelder-Mead', 'Hooke-Jeeves', 'Implicit Filtering',...
+%     'Multidirectional Search', 'Pattern Search', 'Genetic Algorithm'};
 algorithmNames = {'Nelder-Mead', 'Hooke-Jeeves', 'Implicit Filtering',...
-    'Multidirectional Search', 'Pattern Search', 'Genetic Algorithm'};
+    'Multidirectional Search', 'Pattern Search'};
+% algorithmNames = {'Nelder-Mead'};
 
 %Function-related declarations
 functionNames = {'Sphere Function',...
@@ -17,15 +26,16 @@ functionNames = {'Sphere Function',...
     'Different Powers Function'};
 
 %Runs for both dimensions
-allRuns = { sav10d, sav30d };
+allRuns = {sav10d, sav30d};
+% allRuns = {sav10d};
 
 %% Plot initialization
 %Creates a plot for every algorithm-function pair
-% handles = {};
-% for i = 1:(numel(algorithmNames) * numel(functionNames))
-%     handles = cat(2, handles, figure());
-%     handles(i).Position = handles(i).Position + [0 0 300 0];
-% end
+handles = {};
+for i = 1:(numel(algorithmNames) * numel(functionNames))
+    handles = cat(2, handles, figure());
+    handles(i).Position = handles(i).Position + [0 0 300 0];
+end
 
 %% Dimensions loop
 for i = 1:numel(dimensions)
@@ -62,23 +72,28 @@ for i = 1:numel(dimensions)
             end
             
             %Select the correct plot
-%             handle = handles((j - 1) * numel(functionNames) + k);
-%             handle.Name = sprintf('%s - %s', algorithmNames{j}, functionNames{k});
-%             handle.NumberTitle = 'off';
-            % figure(handle);
+            handle = handles((j - 1) * numel(functionNames) + k);
+            handle.Name = sprintf('%s - %s', algorithmNames{j}, functionNames{k});
+            handle.NumberTitle = 'off';
+            figure(handle);
             
             %Plot the worst and best curves
-            % t = linspace(0, 1, samples) * maxFES;
-            % subplot(1, 2, i);
-            % semilogy(t, max(errors), 'b');
-            % grid on;
-            % hold on;
-            % semilogy(t, min(errors), 'r');
-            % grid on;
-            % xlabel('Avaliacoes');
-            % ylabel('Erro residual');
-            % legend({'Pior' ,'Melhor'});
-            % title(sprintf('%d Dimensoes', dimensions(i)));
+            t = linspace(0, 1, samples) * maxFES;
+            subplot(1, 2, i);
+            semilogy(t, max(errors),'LineWidth',2);            
+            grid on;
+            hold on;
+            semilogy(t, min(errors),'LineWidth',2);
+            set(findobj(gcf,'type','axes'),'FontWeight','Bold');
+            
+            
+            grid on;
+            xlabel('Evaluations','fontweight','bold');
+            ylabel('Residual Error','fontweight','bold');
+            legend({'Worst' ,'Best'});
+            title(sprintf('%d Dimensions', dimensions(i)));
+            
+            set(gcf,'position',[680,490,860,460])
             
             %Insert values into the table
             tab(k, :) = { min(finalValues),...
@@ -88,11 +103,10 @@ for i = 1:numel(dimensions)
         end
         
         %Specify column and row names and display table
-        tab.Properties.VariableNames = { 'Melhor', 'Media', 'Pior',...
-            'DesvioPadrao' };
+        tab.Properties.VariableNames = {'Best','Mean','Worst','StandardDeviation'};
         tab.Properties.RowNames = { 'F1', 'F2', 'F3', 'F4', 'F5' };
-        % fprintf('Erro residual - %s - %d Dimensoes\n',...
-        %     algorithmNames{j}, dimensions(i));
-        % disp(tab);
+        fprintf('Residual Error - %s - %d Dimensions\n',...
+            algorithmNames{j}, dimensions(i));
+        disp(tab);
     end
 end

@@ -1,0 +1,41 @@
+%% How to run the code
+
+% To see the results of Study of the Optimization Methods class project, execute one of these files below
+showResults_exported   ---> Regular .m file built in GUI application
+
+% or
+showResults  	---> MATLAB Application Designer
+
+
+% This application has been built on MATLAB Application Designer and properly exported to .m file.
+% Any problems or questions let us know.
+
+
+% To start generating new results, run:
+main
+
+% For each study phase, one specific script should be executed.
+% Exercise 1, run:
+exerc1.m
+% Exercise 2, run:
+exerc2.m
+% Exercise 3, run:
+exerc3.m
+% Exercise 4, run:
+exerc4.m
+
+
+% /results folder contains plot figures in .png and .xlsx files from result tables which have been saved, during development phase.
+
+
+
+% Pontifical Catholic University of Parana
+% Polytechnic School
+% Industrial and Systems Engineering Graduate Program
+% Course: Continuous Optimization based on Direct Methods
+% Professors: Leandro dos Santos Coelho
+% Roberto Zanetti Freire
+
+% Developers 
+% Marcos Yamasaki - yamasaki.marcos@gmail.com
+% Aderson Pifer - aderson.pifer@gmail.com

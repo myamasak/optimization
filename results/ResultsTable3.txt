@@ -1,4 +1,4 @@
->> ExerciseThree
+
 Success Rate and Performance - Nelder-Mead - 10 Dimensions
           SuccessRate    Performance
           ___________    ___________

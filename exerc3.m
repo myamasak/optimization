@@ -6,8 +6,6 @@ LoadResults;
 dimensions = [10, 30];
 
 %Algorithm-related declarations
-% algorithmNames = {'Nelder-Mead', 'Hooke-Jeeves', 'Implicit Filtering',...
-%     'Multidirectional Search', 'Pattern Search', 'Genetic Algorithm'};
 algorithmNames = {'Nelder-Mead', 'Hooke-Jeeves', 'Implicit Filtering',...
     'Multidirectional Search', 'Pattern Search'};
 
@@ -20,6 +18,7 @@ functionNames = {'Sphere Function',...
 
 %Runs for both dimensions
 allRuns = { sav10d, sav30d };
+
 
 %% Dimensions loop
 for i = 1:numel(dimensions)
@@ -64,11 +63,21 @@ for i = 1:numel(dimensions)
             tab(k, :) = { successRate, performance };
         end
         
-        %Specify column and row names and display table
+%         %Specify column and row names and display table
         tab.Properties.VariableNames = { 'SuccessRate', 'Performance' };
         tab.Properties.RowNames = { 'F1', 'F2', 'F3', 'F4', 'F5' };
         fprintf('Success Rate and Performance - %s - %d Dimensions\n',...
             algorithmNames{j}, dimensions(i));
         disp(tab);
+          
+
+              
+%          tabFinal = [tabFinal tab];
     end
 end
+% tabFinalConv = array2table(tabFinal);
+% tabFinalConv.Properties.VariableNames = { 'SuccessRate', 'Performance' };
+% tabFinalConv.Properties.RowNames = { 'F1', 'F2', 'F3', 'F4', 'F5' };
+% tabFinalConv = mergevars(tabFinalConv, {'tabFinal1','tabFinal2'}, 'NewVariableName', 'NelderMead', 'MergeAsTable', false);
+% tabFinalConv = mergevars(tabFinalConv, {'tabFinal3','tabFinal4'}, 'NewVariableName', 'EllipticFunction', 'MergeAsTable', false);
+% disp(tabFinalConv);
