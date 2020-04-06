@@ -50,3 +50,8 @@ and there is no need to perform search outside of the given bounds for these
 problems, see Fi *= Fi(x*) in Table I available in [“Problems_CEC2013.pdf”](/Problems_CEC2013.pdf) to 
 verify the global optimum of each required function. 
 
+
+
+### Screenshot of running app
+![running_app](/otimization.png)
+
