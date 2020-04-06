@@ -53,5 +53,5 @@ verify the global optimum of each required function.
 
 
 ### Screenshot of running app
-![running_app](/otimization.png)
+![running_app](/optimization.png)
 
